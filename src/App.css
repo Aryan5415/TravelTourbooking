@@ -219,19 +219,78 @@ nav.cstm-header .dropdown-toggle::after {
   right: 1rem;
 }
 
-.hero {
+.hero,.cstm-slides {
   padding: 15.625rem 0 11.25rem;
-  /* background-image: url(/static/media/aboutImg.cad085db.png); */
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
   position: relative;
 }
-.hero img.scroll {
+.homehero img.scroll {
   position: absolute;
   left: 1.875rem;
 }
+.cstm-slides{
+  text-align: left;
+}
+section.homehero {
+  overflow: hidden;
+}
+.homehero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.625rem;
+  line-height: 4.25rem;
+  font-weight: 700;
+  position: relative;
+  max-width: 39rem;
+}
+.homehero h1::before{
+  position: absolute;
+  content: '';
+  background-image: url("../src/assets/images/heroHbefore.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4.875rem;
+  height: 1rem;
+  left: 0;
+  top: -2rem;
+}
+.homehero .carousel-inner {
+   overflow: visible; 
+}
+.homehero .carousel-indicators .active {
+  opacity: 1;
+  background-color: #DF6951;
+}
+.homehero .carousel-indicators button {
+  opacity: 1;
+  background-color: #FFF;
+}
+.homehero .carousel-indicators {
+  bottom: 1rem;
+}
+.homehero .carousel .carousel-control-next,.homehero .carousel .carousel-control-prev {
+  display: none;
+}
+.homehero .filter {
+  background-color: rgb(243 243 243 / 60%);
+  padding: 1.875rem 0;
+  max-width: 53rem;
+  margin: 2rem 0;
+  backdrop-filter: blur(35px);
+  border-radius: 0.313rem;
+}
+.homehero .content p img{
+  margin-right: 1rem;
+}
+.homehero .content p {
+  font-size: 0.813rem;
+  color: #FFF;
+  font-weight: 500;
+}
+
+
 
 .aboutpromotion{
   padding: 6.25rem 0;
@@ -404,6 +463,28 @@ nav.cstm-header .dropdown-toggle::after {
 }
 .cstm-testimonial .carousel-inner {
   overflow: visible;
+}
+.cstm-testimonial .carousel .carousel-control-prev-icon {
+  background-image: url("../src/assets/images/navigationleft.png");
+  height: 4rem;
+  width: 4rem;
+}
+.cstm-testimonial .carousel .carousel-control-next-icon {
+  background-image: url("../src/assets/images/navigationright.png");
+  height: 4rem;
+  width: 4rem;
+}
+.cstm-testimonial .carousel .carousel-control-prev {
+  left: -42%;
+  right: 0;
+  opacity: 1;
+  margin: auto;
+}
+.cstm-testimonial .carousel .carousel-control-next {
+  left: 0;
+  right: -42%;
+  opacity: 1;
+  margin: auto;
 }
 .cstm-testimonial .content {
   background: #FFF;
@@ -774,10 +855,77 @@ section.patners {
 }
 
 
-.upcomingpackages{
-  padding: 6.25rem 0;
+.upcomingpackages {
+  padding: 0 0 6.25rem 0;
+  z-index: 1;
+  top: -4rem;
+  position: relative;
 }
 .upcomingpackages .upper {
   background-color: #F8F8F8;
-  padding: 3rem 0;
+  padding: 3rem;
+}
+.upcomingpackages .upper h3 {
+  font-size: 1.25rem;
+  color: #343434;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upcomingpackages .upper h3 span{
+  margin-right: 1rem;
+}
+.upcomingpackages .lower img.main{
+  width: 100%;
+}
+.upcomingpackages .lower .afterimg {
+  background-color: #DF6951;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1.875rem;
+  align-items: center;
+}
+.upcomingpackages .lower .afterimg h3 {
+  font-weight: 500;
+  font-size: 0.813rem;
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0;
+}
+.upcomingpackages .lower .afterimg h3 span {
+  margin-right: 1rem;
+}
+.upcomingpackages .lower h2.name {
+  font-size: 2.125rem;
+  line-height: 2.75rem;
+}
+.upcomingpackages .lower p{
+  color: #181E4B;
+}
+.upcomingpackages .lower .content{
+  padding: 1.875rem;
+}
+.upcomingpackages .lower .content .price-rating {
+  display: flex;
+  gap: 0px 1.875rem;
+  align-items: center;
+}
+.upcomingpackages .lower .content .price-rating p {
+  margin: 0;
+  font-size: 1.063rem;
+  color: #262626;
+  font-weight: 500;
+}
+.upcomingpackages .lower .content .price-rating svg {
+  margin-top: -0.313rem;
+  margin-right: 0.313rem;
+  fill: #DF6951;
+}
+.upcomingpackages .lower .onhover {
+  padding: 1.875rem 0.938rem 0.938rem;
+  border-radius: 1.875rem;
+}
+.upcomingpackages .lower a:hover .onhover {
+  box-shadow: 0px 0.25rem 3.25rem 0.813rem rgba(0,0,0,0.09);
 }

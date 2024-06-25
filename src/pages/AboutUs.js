@@ -1,19 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import IndexImages from "../assets/images/images";
 import CarouselComponent from "../components/shared/CarouselComponent";
 import { FaCirclePlay } from "react-icons/fa6";
+import MainBanner from "../components/shared/MainBanner";
 
-function AboutUs() {
-    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  
-    const handleVideoPlay = () => {
-      setIsVideoPlaying(true);
-    };
-  
+function AboutUs(props) {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const handleVideoPlay = () => {
+    setIsVideoPlaying(true);
+  };
+  const [pageData, setPageData] = useState({
+    title: "",
+    image: "",
+    subTitle: "",
+    pageType: "",
+  });
+
+  useEffect(() => {
+    setPageData({
+      title: "About Us",
+      image: IndexImages.aboutImg,
+      subTitle: "Read",
+      pageType: "about",
+    });
+  }, []);
+
   return (
     <>
+      <MainBanner pageData={pageData} />
       <section className="aboutpromotion">
         <Container>
           <Row className="main">
@@ -35,14 +51,13 @@ function AboutUs() {
         </Container>
       </section>
 
-
-      <section className='cstm-video'>
+      <section className="cstm-video">
         <Container>
           {!isVideoPlaying && <h1>Wanderlust</h1>}
           {!isVideoPlaying && <FaCirclePlay onClick={handleVideoPlay} />}
           {isVideoPlaying && (
             <div className="video-wrapper">
-                <iframe
+              <iframe
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/PPjYWaqCffQ?si=ZxaHPDmiaOOKyFat"
@@ -57,7 +72,6 @@ function AboutUs() {
           <div className="overlay"></div>
         </Container>
       </section>
-
 
       <section className="cstm-trend">
         <Container>

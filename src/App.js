@@ -6,7 +6,6 @@ import Footer from './components/shared/Footer';
 import { Route,Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
-import MainBanner from './components/shared/MainBanner';
 import Packages from './pages/Packages';
 
 
@@ -14,7 +13,6 @@ function App() {
   return (
     <div className='app'>
     <Header />
-    <MainBanner />
     <Routes>
       <Route path='/' Component={HomePage} />
       <Route path='/about' Component={AboutUs} />

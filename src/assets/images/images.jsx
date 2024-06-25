@@ -47,6 +47,15 @@ import Package2img from './packageimg2.png'
 import Package3img from './packageimg3.png'
 import TestimonialUser from './testimonialuser.png'
 import Calender from './calender.png'
+import Herouser from './Group81.png'
+import PackageBanner from './packagebanner.png'
+import Upload from './upload.svg'
+import Upload1 from './upload1.svg'
+import Pencil from './editoutline.svg'
+import CstmPackageimg1 from './cstmpackagesimg1.png'
+import CstmPackageimg2 from './cstmpackagesimg2.png'
+import CalenderWhite from './calendarwhite.svg'
+import User3 from './user3.svg'
 const IndexImages={
     homeBanner,
     logo,
@@ -96,7 +105,16 @@ const IndexImages={
     Package2img,
     Package3img,
     TestimonialUser,
-    Calender
+    Calender,
+    Herouser,
+    PackageBanner,
+    Upload,
+    Upload1,
+    Pencil,
+    CstmPackageimg1,
+    CstmPackageimg2,
+    CalenderWhite,
+    User3
 }
 
 export default IndexImages

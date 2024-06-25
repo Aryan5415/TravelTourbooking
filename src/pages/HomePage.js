@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import IndexImages from "../assets/images/images";
 import { Link } from "react-router-dom";
@@ -7,9 +7,30 @@ import { FaUser } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import CarouselComponent from '../components/shared/CarouselComponent';
+import MainBanner from '../components/shared/MainBanner';
 function HomePage() {
+  const [pageData, setPageData] = useState({
+    title: "",
+    image: "",
+    subTitle: "",
+    pageType: "",
+    image2: "",
+    image3: "",
+  });
+
+  useEffect(() => {
+    setPageData({
+      title: "No matter where you’re going to, we’ll take you there",
+      image: IndexImages.homeBanner,
+      subTitle: "",
+      pageType: "home",
+      image2: IndexImages.aboutImg,
+      image3: IndexImages.PackageBanner,
+    });
+  }, []);
   return (
     <>
+    <MainBanner pageData={pageData} />
       <section className="patners">
         <Container>
           <Row>
