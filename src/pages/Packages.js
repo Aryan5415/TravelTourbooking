@@ -11,6 +11,15 @@ function Packages(){
                     <Col>
                     <h3><span><img src={IndexImages.Calender}/></span>Date</h3>
                     </Col>
+                    <Col>
+                    <h3><span><img src={IndexImages.Calender}/></span>price low to High</h3>
+                    </Col>
+                    <Col>
+                    <h3><span><img src={IndexImages.Calender}/></span>Price High to low</h3>
+                    </Col>
+                    <Col>
+                    <h3><span><img src={IndexImages.Calender}/></span>Name (A-z)</h3>
+                    </Col>
                 </Row>
             </Container>
         </section>
