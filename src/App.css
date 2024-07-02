@@ -112,6 +112,7 @@ nav.cstm-header .dropdown-toggle::after {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   padding: 0!important;
+  display: block;
   margin: 0 0 0.625rem;
 }
 .cstm-header .dropdown-menu.show a:last-child {
@@ -124,8 +125,128 @@ nav.cstm-header .dropdown-toggle::after {
 .cstm-header .dropdown-menu.show a:hover::before, .cstm-header .dropdown-menu.show a:active::before, .cstm-header .dropdown-menu.show a:focus::before{
   display: none!important;
 }
-
-
+.cstm-header .dropdown-menu .dropdown-item:focus{
+  background-color: transparent;
+  color: #DF6951!important;
+}
+.modal-dialog .modal-content {
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+}
+.modal-dialog .modal-title h2{
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+}
+.modal-dialog .modal-header button.btn-close {
+  font-size: 1.25rem;
+  padding: 0!important;
+  opacity: 1;
+  right: 1.25rem;
+  position: absolute;
+  top: 1.25rem;
+  margin: 0!important;
+}
+.modal-dialog .modal-header {
+  padding: 0;
+  border: 0;
+}
+.modal-dialog .modal-body {
+  padding: 0;
+  width: 100%;
+}
+.modal-dialog .modal-body input#floatingInput {
+  border: 0.063rem solid #000;
+  border-radius: 0.375rem;
+  color: #1E1D4C;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  min-height: 5rem;
+}
+.modal-dialog .modal-body label {
+  width: 100%;
+  color: rgba(0, 0, 0, .59);
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  top: 0.25rem;
+}
+.modal-dialog .modal-body input#floatingInput:focus{
+  box-shadow: none;
+}
+.modal-dialog .modal-body .form-floating {
+  margin: 1rem 0;
+}
+.modal-dialog .modal-body .form-floating::after {
+  position: absolute;
+  content: '';
+  background-image: url("./assets/images/modal-info.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.25rem;
+  width: 1.25rem;
+  right: 1rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.modal-dialog .modal-body .add{
+  color: #DF6951;
+  font-size: 0.813rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.modal-dialog .modal-body .two-floating {
+  max-width: 26.15rem;
+  margin: auto;
+}
+.modal-dialog .modal-body .two-floating .form-floating::after{
+  display: none;
+}
+.modal-dialog .modal-body .two-floating .form-floating.one input {
+  border-right: 0!important;
+  border-radius: 0.375rem 0 0 0.375rem!important;
+  padding-left: 1.5rem;
+}
+.modal-dialog .modal-body .two-floating .form-floating.two input {
+  border-radius: 0 0.375rem 0.375rem 0!important;
+  padding-left: 1.5rem;
+}
+.modal-dialog .modal-body .two-floating label{
+  left: 0.75rem;
+}
+.modal-dialog .modal-body .two-floating .form-floating{
+  padding: 0;
+}
+.modal-dialog .cstm-checkboxes.row {
+  gap: 1rem 0;
+  margin: 1rem 0 2rem;
+}
+.modal-dialog .cstm-checkboxes  label.form-check-label {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.59);
+}
+.modal-dialog .cstm-checkboxes  input.form-check-input {
+  border-color: #000;
+  margin-top: 0.313rem;
+}
+.modal-dialog .modal-body button {
+  font-size: 0.813rem;
+  background-color: #DF6951;
+  border: 0.063rem solid #DF6951;
+  padding: 0.875rem 2.125rem;
+  font-family: "Poppins", sans-serif;
+  color: #FFF;
+  margin: auto;
+  display: block;
+}
+.form-check-input:focus{
+  box-shadow: none;
+}
+.form-check-input:checked{
+  background-color: #DF6951;
+  border-color: #DF6951!important;
+}
 .cstm-footer {
   position: relative;
   padding: 6.25rem 0 3.125rem;
@@ -278,8 +399,11 @@ section.homehero {
   padding: 1.875rem 0;
   max-width: 53rem;
   margin: 2rem 0;
-  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(2.188rem);
+  backdrop-filter: blur(2.188rem);
+  align-items: center;
   border-radius: 0.313rem;
+  text-align: center;
 }
 .homehero .content p img{
   margin-right: 1rem;
@@ -289,8 +413,36 @@ section.homehero {
   color: #FFF;
   font-weight: 500;
 }
-
-
+.homehero .cstm-slides .filter a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+.homehero .cstm-slides .filter .comn{
+  border-right: 0.188rem solid #D0D0D0;
+}
+.homehero .cstm-slides .filter .last {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homehero .filter #dropdown-basic {
+  background: none;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  box-shadow: none;
+  padding: 0;
+}
+.homehero .filter button {
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+  font-weight: 600;
+  background-color: #DF6951;
+  border: 0.063rem solid #DF6951;
+  padding: 0.875rem 3.438rem;
+}
 
 .aboutpromotion{
   padding: 6.25rem 0;
@@ -855,13 +1007,34 @@ section.patners {
 }
 
 
-.upcomingpackages {
+.upcomingpackages,.cstm-packagedetail {
   padding: 0 0 6.25rem 0;
   z-index: 1;
   top: -4rem;
+  -webkit-box-shadow: 0 0.25rem 3rem 0.75rem rgba(0,0,0,0.09);
+  -moz-box-shadow: 0 0.25rem 3rem 0.75rem rgba(0,0,0,0.09);
+  box-shadow: 0 0.25rem 3rem 0.75rem rgba(0,0,0,0.09);
   position: relative;
+  max-width: 82.5rem;
+  background: #FFF;
+  margin: auto;
 }
-.upcomingpackages .upper {
+.cstm-packagedetail .container{
+  padding: 0;
+}
+.upcomingpackages::after{
+  position: absolute;
+  content: '';
+  background-image: url("./assets/images/aftershell.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14rem;
+  height: 10rem;
+  right: 0;
+  top: 8rem;
+  z-index: -1;
+}
+.upcomingpackages .upper{
   background-color: #F8F8F8;
   padding: 3rem;
 }
@@ -894,7 +1067,7 @@ section.patners {
   margin: 0;
 }
 .upcomingpackages .lower .afterimg h3 span {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .upcomingpackages .lower h2.name {
   font-size: 2.125rem;
@@ -908,7 +1081,7 @@ section.patners {
 }
 .upcomingpackages .lower .content .price-rating {
   display: flex;
-  gap: 0px 1.875rem;
+  gap: 0 1.875rem;
   align-items: center;
 }
 .upcomingpackages .lower .content .price-rating p {
@@ -923,9 +1096,355 @@ section.patners {
   fill: #DF6951;
 }
 .upcomingpackages .lower .onhover {
-  padding: 1.875rem 0.938rem 0.938rem;
+  padding: 1.5rem 0.938rem 0.938rem;
   border-radius: 1.875rem;
 }
+.upcomingpackages .lower.row {
+  margin-top: 2rem;
+}
 .upcomingpackages .lower a:hover .onhover {
-  box-shadow: 0px 0.25rem 3.25rem 0.813rem rgba(0,0,0,0.09);
+  box-shadow: 0 0.25rem 3.25rem 0.813rem rgba(0,0,0,0.09);
+  margin-top: -1.875rem;
+}
+.upcomingpackages .lower a:hover .main {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.upcomingpackages .lower .right .plan-trip, .cstm-packagedetail .tab-content .right .book-tour {
+  text-align: center;
+  background-color: #EDEDED;
+  padding: 2.5rem;
+  margin: -1.5rem auto 0;
+  max-width: 30rem;
+}
+.upcomingpackages .lower .right .plan-trip{
+  margin-top: 1.5rem;
+}
+.upcomingpackages .lower .right .plan-trip h2,.cstm-packagedetail .tab-content .right .book-tour h2 {
+  font-size: 2.625rem;
+  line-height: 3.375rem;
+}
+.upcomingpackages .lower .right .plan-trip p,.cstm-packagedetail .tab-content .right .book-tour p{
+  color: #000;
+}
+.upcomingpackages .lower .right img, .cstm-packagedetail .tab-content .right img {
+  width: 100%;
+  margin-top: 3.125rem;
+}
+.upcomingpackages .lower .right .plan-trip .form {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+.upcomingpackages .lower .right .plan-trip .form h3 {
+  text-align: left;
+  color: #343434;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+.upcomingpackages .lower .right .plan-trip .form button{
+  padding: 0.95rem 3rem!important;
+}
+
+
+
+.cstm-packagedetail .upper .nav-item {
+  width: 25%;
+}
+.cstm-packagedetail .upper .nav-item a {
+  background-color: #F8F8F8;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #343434;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  gap: 0 0.625rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.cstm-packagedetail .upper .nav-item a:hover,.cstm-packagedetail .upper .nav-item a:focus{
+  background-color: #FFF;
+}
+.tab-content {
+  padding: 3.75rem 2.5rem 0;
+}
+.cstm-packagedetail .tab-content .title h2,.cstm-packagedetail .tab-content .title {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 2.625rem;
+}
+.cstm-packagedetail .tab-content .title ,.cstm-packagedetail .tab-content .reviews{
+  display: flex;
+  gap: 0 3.125rem;
+  align-items: center;
+}
+.cstm-packagedetail .tab-content .title h3 {
+  color: #DF6951;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.875rem;
+}
+.cstm-packagedetail .tab-content .title h3 span.font-chnge {
+  color: #7D7D7D;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: -0.25rem;
+}
+.cstm-packagedetail .tab-content .title h3 span.color-chnge {
+  color: #7D7D7D;
+  font-weight: 400;
+  font-size: 1.438rem;
+  margin-left: 0.25rem;
+}
+.cstm-packagedetail .tab-content .reviews{
+  gap: 1.25rem;
+}
+.cstm-packagedetail .tab-content .reviews p {
+  margin: 0.625rem 0 0;
+  color: #5E6282;
+  font-weight: 500;
+}
+.cstm-packagedetail .tab-content .reviews svg{
+  fill: #FFBA0A;
+}
+.cstm-packagedetail .tab-content p.desc {
+  margin: 1.875rem 0 0;
+}
+.cstm-packagedetail .tab-content .info {
+  margin: 3.125rem 0 6.25rem;
+  gap: 1.5rem 0;
+}
+.cstm-packagedetail .tab-content .info h3 {
+  color: #DF6951;
+  font-size: 1.25rem;
+  text-transform: none;
+}
+.cstm-packagedetail .tab-content .info p {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+.cstm-packagedetail .tab-content .cstm-gallery{
+  gap: 1rem 0;
+}
+.cstm-packagedetail .tab-content .cstm-gallery p{
+  margin-bottom: 2rem;
+}
+.cstm-packagedetail .tab-content .cstm-gallery img{
+  width: 100%;
+}
+.cstm-packagedetail .tab-content .right p{
+  margin-bottom: 2rem;
+}
+.cstm-packagedetail .tab-content .right form{
+  padding: 0 1rem;
+}
+.cstm-packagedetail .tab-content .right form input.form-control,.cstm-packagedetail .tab-content .right form textarea,.upcomingpackages .lower .right .plan-trip input {
+  border-radius: 0;
+  padding: 1.625rem 1.625rem 1.625rem 3rem;
+  margin: 0.625rem 0;
+  border: 0;
+}
+.cstm-packagedetail .tab-content .right form input.form-control:focus,.cstm-packagedetail .tab-content .right form textarea:focus,.upcomingpackages .lower .right .plan-trip input:focus{
+  box-shadow: none;
+}
+.cstm-packagedetail .tab-content .right form input::placeholder,.cstm-packagedetail .tab-content .right form input,.cstm-packagedetail .tab-content .right form textarea::placeholder,.upcomingpackages .lower .right .plan-trip input::placeholder,.upcomingpackages .lower .right .plan-trip input{
+  color: rgba(0, 0, 0, 0.26);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+}
+.cstm-packagedetail .tab-content .right form textarea{
+  max-height: 4.75rem;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.26);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  padding: 1rem 1rem 1rem 3rem;
+}
+.cstm-packagedetail .tab-content .right form button,.upcomingpackages .lower .right .plan-trip .form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #DF6951;
+  border-color: #DF6951;
+  padding: 0.95rem;
+  border-radius: 0.625rem;
+  display: block;
+  margin: 1.5rem auto 0;
+}
+.cstm-packagedetail .tab-content .right form button.submit{
+    padding: 0.95rem 3.072rem!important;
+}
+.cstm-packagedetail .tab-content .right form div,.upcomingpackages .lower .right .plan-trip .form div{
+  position: relative;
+}
+.cstm-packagedetail .tab-content .right form div::before,.upcomingpackages .lower .right .plan-trip .form div::before {
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.25rem;
+  height: 1.25rem;
+  left: 1.25rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.cstm-packagedetail .tab-content .right form .text::before {
+  background-image: url("./assets/images/formuser.svg");
+}
+.cstm-packagedetail .tab-content .right form .email::before {
+  background-image: url("./assets/images/formemail.svg");
+}
+.cstm-packagedetail .tab-content .right form .phone::before {
+  background-image: url("./assets/images/formphone.svg");
+}
+.cstm-packagedetail .tab-content .right form .ticket::before {
+  background-image: url("./assets/images/Tags.svg");
+}
+.cstm-packagedetail .tab-content .right form .message::before {
+  background-image: url("./assets/images/formmessage.svg");
+  top: -1rem;
+}
+.cstm-packagedetail .tab-content .right form .date::before,.upcomingpackages .lower .right .plan-trip .form .date::before {
+  background-image: url("./assets/images/formcalendar.svg");
+}
+.upcomingpackages .lower .right .plan-trip .form .search::before {
+  background-image: url("./assets/images/formsearch.svg");
+}
+.upcomingpackages .lower .right .plan-trip .form .whereto::before {
+  background-image: url("./assets/images/formlocation.svg");
+}
+.cstm-packagedetail .tab-content .left p.number {
+  background-color: #DF6951;
+  border-radius: 0.625rem;
+  text-align: center;
+  color: #FFF;
+  font-weight: 700;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  width: 3rem;
+  height: 3rem;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content {
+  padding-left: 2rem;
+  position: relative;
+  padding-top: 0.5rem;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content::before{
+  position: absolute;
+  content: '';
+  background-image: url("./assets/images/Line12.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22rem;
+  left: -1.563rem;
+  width: 0.063rem;
+  z-index: -1;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content:last-child::before{
+  background-image: none;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #181E4B;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content p{
+  color: #181E4B;
+  max-width: 34.313rem;
+  text-transform: capitalize;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content ul{
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+.cstm-packagedetail .tab-content .tour-info .info-content li {
+  color: #181E4B;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.cstm-packagedetail .tab-content .tour-info {
+  margin-top: 2rem;
+  gap: 2rem 0;
+}
+.cstm-packagedetail .tab-content .location img{
+  width: 100%;
+}
+.cstm-packagedetail .tab-content .location p{
+  color: #181E4B;
+  text-transform: capitalize;
+}
+.cstm-packagedetail .tab-content .location .title,.cstm-packagedetail .tab-content .location p,.cstm-packagedetail .tab-content .location img{
+  margin-bottom: 2rem;
+}
+.cstm-packagedetail .tab-content .gallery img {
+  width: 100%;
+  height: 100%;
+}
+.cstm-packagedetail .tab-content .gallery .left-img img{
+  max-height: 13rem;
+  margin-bottom: 1rem;
+}
+.cstm-packagedetail .tab-content .gallery .main{
+  gap: 1rem 0;
+  margin-top: -1.5rem;
+}
+.cstm-packagedetail .tab-content .gallery .left-img img:last-child{
+  margin: 0;
+}
+.cstm-packagedetail .tab-content .gallery .right-img img{
+  object-fit: cover;
+}
+.cstm-packagedetail .tab-content .tab-before{
+  position: relative;
+}
+.cstm-packagedetail .tab-content .tab-before::before{
+  position: absolute;
+  content: '';
+  background-image: url('./assets/images/tabbefore.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 23.75rem;
+  height: 15.75rem;
+  bottom: -6.25rem;
+  left: -1.75rem;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination,.upcomingpackages .lower .left .pagination{
+  justify-content: center;
+  margin-top: 3rem;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination a.page-link, .upcomingpackages .lower .left .pagination a.page-link {
+  color: #181E4B;
+  padding: 4px 12.2px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination a.page-link:hover{
+  background-color: transparent;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination a.page-link:focus{
+  background-color: transparent;
+  box-shadow: none;
+}
+.upcomingpackages .lower .left .pagination a.page-link:hover{
+  background-color: #EBEBEB;
+  border-radius: 3.125rem;
+}
+.upcomingpackages .lower .left .pagination a.page-link:focus {
+  box-shadow: none;
+  background-color: #EBEBEB;
+  border-radius: 3.125rem;
 }

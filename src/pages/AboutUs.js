@@ -60,7 +60,7 @@ function AboutUs(props) {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/PPjYWaqCffQ?si=ZxaHPDmiaOOKyFat"
+                src="https://www.youtube.com/embed/rfJ-6LrD4Ic?si=SXNCBqbtI3I2yZ-H"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -56,6 +56,34 @@ import CstmPackageimg1 from './cstmpackagesimg1.png'
 import CstmPackageimg2 from './cstmpackagesimg2.png'
 import CalenderWhite from './calendarwhite.svg'
 import User3 from './user3.svg'
+import CstmPackageimg3 from './cstmpackagesimg3.png'
+import CstmPackageimg4 from './cstmpackagesimg4.png'
+import CstmPackageimg5 from './cstmpackagesimg5.png'
+import CstmPackageimg6 from './cstmpackagesimg6.png'
+import PackageAirplane from './packageairplane.png'
+import GalleryImg1 from './galleryimg1.png'
+import GalleryImg2 from './galleryimg2.png'
+import GalleryImg3 from './galleryimg3.png'
+import GalleryImg4 from './galleryimg4.png'
+import GalleryImg5 from './galleryimg5.png'
+import GalleryImg6 from './galleryimg6.png'
+import InfoCircle from './infocircle.svg'
+import BeforeCalender from './beforecalender.svg'
+import BeforeGallery from './beforegallery.svg'
+import BeforeLocation from './beforelocation.svg'
+import FormUser from './formuser.svg'
+import Line12 from './Line12.svg'
+import Map from './map.png'
+import TabGalleryImg1 from './tabgalleryimg1.png'
+import TabGalleryImg2 from './tabgalleryimg2.png'
+import TabGalleryImg3 from './tabgalleryimg3.png'
+import TabGalleryImg4 from './tabgalleryimg4.png'
+import TabGalleryImg5 from './tabgalleryimg5.png'
+import TabGalleryImg6 from './tabgalleryimg6.png'
+import TabGalleryImg7 from './tabgalleryimg7.png'
+import DetailBanner from './DetailBanner.png'
+
+
 const IndexImages={
     homeBanner,
     logo,
@@ -114,7 +142,33 @@ const IndexImages={
     CstmPackageimg1,
     CstmPackageimg2,
     CalenderWhite,
-    User3
+    User3,
+    CstmPackageimg3,
+    CstmPackageimg4,
+    CstmPackageimg5,
+    CstmPackageimg6,
+    PackageAirplane,
+    GalleryImg1,
+    GalleryImg2,
+    GalleryImg3,
+    GalleryImg4,
+    GalleryImg5,
+    GalleryImg6,
+    InfoCircle,
+    BeforeCalender,
+    BeforeGallery,
+    BeforeLocation,
+    FormUser,
+    Line12,
+    Map,
+    TabGalleryImg1,
+    TabGalleryImg2,
+    TabGalleryImg3,
+    TabGalleryImg4,
+    TabGalleryImg5,
+    TabGalleryImg6,
+    TabGalleryImg7,
+    DetailBanner
 }
 
 export default IndexImages
