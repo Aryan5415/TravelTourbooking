@@ -34,19 +34,19 @@ function HomePage() {
       <section className="patners">
         <Container>
           <Row>
-            <Col>
+            <Col md={4} xs={6} lg>
               <img src={IndexImages.FlyEmirates} />
             </Col>
-            <Col>
+            <Col md={4} xs={6} lg>
               <img src={IndexImages.Trivago} />
             </Col>
-            <Col>
+            <Col md={4} xs={6} lg>
               <img src={IndexImages.AirBnb} />
             </Col>
-            <Col>
+            <Col md={4} xs={6} lg>
               <img src={IndexImages.TurkishAirline} />
             </Col>
-            <Col>
+            <Col md={4} xs={6} lg>
               <img src={IndexImages.Swiss} />
             </Col>
           </Row>
@@ -58,7 +58,7 @@ function HomePage() {
           <h3>CATEGORY</h3>
           <h2>We Offer Best Services</h2>
           <Row className="sub-category">
-            <Col>
+            <Col md={6} lg>
               <Link to="/">
                 <img src={IndexImages.Serviceimg1} />
                 <h3>Guided Tours</h3>
@@ -67,7 +67,7 @@ function HomePage() {
                 </p>
               </Link>
             </Col>
-            <Col>
+            <Col md={6} lg>
               <Link to="/">
                 <img src={IndexImages.Serviceimg2} />
                 <h3>Best Flights Options</h3>
@@ -76,7 +76,7 @@ function HomePage() {
                 </p>
               </Link>
             </Col>
-            <Col>
+            <Col md={6} lg>
               <Link to="/">
                 <img src={IndexImages.Serviceimg3} />
                 <h3>Religious Tours</h3>
@@ -85,7 +85,7 @@ function HomePage() {
                 </p>
               </Link>
             </Col>
-            <Col>
+            <Col md={6} lg>
               <Link to="/">
                 <img src={IndexImages.Serviceimg4} />
                 <h3>Medical insurance</h3>
@@ -96,10 +96,10 @@ function HomePage() {
             </Col>
           </Row>
           <Row className="cstm-services">
-            <Col className="service-img">
+            <Col className="service-img" xs={12} lg md={6}>
               <img src={IndexImages.HoneymoonImg} />
             </Col>
-            <Col className="content">
+            <Col className="content" xs={12} lg md={6}>
               <h3>Honeymoon Specials</h3>
               <h2>Our Romantic Tropical Destinations</h2>
               <p>
@@ -112,7 +112,7 @@ function HomePage() {
             </Col>
           </Row>
           <Row className="cstm-services">
-            <Col className="content2" xs={5}>
+            <Col className="content2" xs={12} lg={5} md={6}>
               <h3>Fast & Easy</h3>
               <h2>Get Your Favourite Resort Bookings</h2>
               <Row className="cstm-iconbox">
@@ -148,7 +148,7 @@ function HomePage() {
                 </Col>
               </Row>
             </Col>
-            <Col className="service-img2" xs={7}>
+            <Col className="service-img2" xs={12} lg={7} md={6}>
               <img src={IndexImages.TripHawaiiImg} />
             </Col>
           </Row>
@@ -167,7 +167,7 @@ function HomePage() {
       <section className="we-provide">
         <Container>
           <Row>
-            <Col>
+            <Col lg xs={12} md={6}> 
               <h3>Promotion</h3>
               <h2>We Provide You Best Europe Sightseeing Tours</h2>
               <p>
@@ -178,21 +178,21 @@ function HomePage() {
               </p>
               <Link to="/">View Packages</Link>
             </Col>
-            <Col>
+            <Col lg xs={12} md={6}>
               <img src={IndexImages.WeProvideMain} className="main-img" />
             </Col>
           </Row>
           <Row className="destination-options">
-            <Col>
+          <Col lg xs={12} md={3}>
               <img src={IndexImages.Destination1} />
             </Col>
-            <Col>
+            <Col lg xs={12} md={3}>
               <img src={IndexImages.Destination2} />
             </Col>
-            <Col>
+            <Col lg xs={12} md={3}>
               <img src={IndexImages.Destination3} />
             </Col>
-            <Col>
+            <Col lg xs={12} md={3}>
               <img src={IndexImages.Destination4} />
             </Col>
           </Row>
@@ -201,12 +201,12 @@ function HomePage() {
 
       <section className="home-explore">
         <Row>
-          <Col className="nature">
+          <Col className="nature" lg xs={12} md={6}>
             <h3>Promotion</h3>
             <h2>Explore Nature</h2>
             <Link to="/">View Packages</Link>
           </Col>
-          <Col className="cities">
+          <Col className="cities" lg xs={12} md={6}>
             <h3>Promotion</h3>
             <h2>Explore cities</h2>
             <Link to="/">View Packages</Link>
@@ -218,12 +218,12 @@ function HomePage() {
         <h3>trendy</h3>
         <h2>Our Trending Tour Packages</h2>
         <Container>
-          <Row>
-            <Col>
+          <Row className="main">
+            <Col lg xs={12} md={6}>
               <div className="package">
                 <img src={IndexImages.Package3img} />
                 <Row>
-                  <Col xs={3}>
+                  <Col xs={4} lg={3} md={4}>
                     <p>
                       <span>
                         <FaCalendar />
@@ -231,7 +231,7 @@ function HomePage() {
                       8 Days
                     </p>
                   </Col>
-                  <Col xs={5}>
+                  <Col xs={6} lg={5} md={8}>
                     <p>
                       <span>
                         <FaUser />
@@ -239,7 +239,7 @@ function HomePage() {
                       25 People going
                     </p>
                   </Col>
-                  <Col xs={4} className="star-rating">
+                  <Col xs={12} className="star-rating" lg={4} md={12}>
                     <FaStar />
                     <FaStar />
                     <FaStar />
@@ -268,11 +268,11 @@ function HomePage() {
                 </Row>
               </div>
             </Col>
-            <Col>
+            <Col lg xs={12} md={6}>
             <div className="package two">
                 <img src={IndexImages.PackageFirstImg} />
                 <Row>
-                  <Col xs={3}>
+                  <Col xs={4} lg={3} md={4}>
                     <p>
                       <span>
                         <FaCalendar />
@@ -280,7 +280,7 @@ function HomePage() {
                       8 Days
                     </p>
                   </Col>
-                  <Col xs={5}>
+                  <Col xs={6} lg={5} md={8}>
                     <p>
                       <span>
                         <FaUser />
@@ -288,7 +288,7 @@ function HomePage() {
                       30 People going
                     </p>
                   </Col>
-                  <Col xs={4} className="star-rating">
+                  <Col xs={12} lg={4} className="star-rating" md={12}> 
                     <FaStar />
                     <FaStar />
                     <FaStar />
@@ -317,11 +317,11 @@ function HomePage() {
                 </Row>
               </div>
             </Col>
-            <Col>
+            <Col lg xs={12} md={6}>
             <div className="package three">
                 <img src={IndexImages.Package2img} />
                 <Row>
-                  <Col xs={3}>
+                  <Col xs={4} lg={3} md={4}>
                     <p>
                       <span>
                         <FaCalendar />
@@ -329,7 +329,7 @@ function HomePage() {
                       8 Days
                     </p>
                   </Col>
-                  <Col xs={5}>
+                  <Col xs={6} lg={5} md={8}>
                     <p>
                       <span>
                         <FaUser />
@@ -337,7 +337,7 @@ function HomePage() {
                       155 People going
                     </p>
                   </Col>
-                  <Col xs={4} className="star-rating">
+                  <Col xs={12} lg={4} className="star-rating" md={12}>
                     <FaStar />
                     <FaStar />
                     <FaStar />

@@ -29,8 +29,8 @@ function MainBanner(props) {
                       <div className="content">
                   <h1>No matter where you’re going to, we’ll take you there</h1>
                   <Row className="filter">
-                    <Col xs={3} className="comn"><Link to="/">Where to?</Link></Col>
-                  <Col xs={3} className="comn"><Dropdown>
+                    <Col lg={3} xs={6} md={3} className="comn"><Link to="/">Where to?</Link></Col>
+                  <Col lg={3} xs={6} md={3} className="comn"><Dropdown>
       <Dropdown.Toggle  id="dropdown-basic">
       Travel Type
       </Dropdown.Toggle>
@@ -41,7 +41,7 @@ function MainBanner(props) {
         <Dropdown.Item href="/">Something else</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown></Col>
-    <Col xs={6} className="last"><Dropdown>
+    <Col lg={6} xs={12} md={6} className="last"><Dropdown>
       <Dropdown.Toggle  id="dropdown-basic">
       Duration
       </Dropdown.Toggle>
@@ -71,8 +71,8 @@ function MainBanner(props) {
                       <div className="content">
                   <h1>No matter where you’re going to, we’ll take you there</h1>
                   <Row className="filter">
-                    <Col xs={3} className="comn"><Link to="/">Where to?</Link></Col>
-                  <Col xs={3} className="comn"><Dropdown>
+                    <Col lg={3} xs={6} md={3} className="comn"><Link to="/">Where to?</Link></Col>
+                  <Col lg={3} xs={6} md={3} className="comn"><Dropdown>
       <Dropdown.Toggle  id="dropdown-basic">
       Travel Type
       </Dropdown.Toggle>
@@ -83,7 +83,7 @@ function MainBanner(props) {
         <Dropdown.Item href="/">Something else</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown></Col>
-    <Col xs={6} className="last"><Dropdown>
+    <Col lg={6} xs={12} md={6} className="last"><Dropdown>
       <Dropdown.Toggle  id="dropdown-basic">
       Duration
       </Dropdown.Toggle>
@@ -113,8 +113,8 @@ function MainBanner(props) {
                       <div className="content">
                   <h1>No matter where you’re going to, we’ll take you there</h1>
                   <Row className="filter">
-                    <Col xs={3} className="comn"><Link to="/">Where to?</Link></Col>
-                  <Col xs={3} className="comn"><Dropdown>
+                    <Col lg={3} xs={6} md={3} className="comn"><Link to="/">Where to?</Link></Col>
+                  <Col lg={3} xs={6} md={3} className="comn"><Dropdown>
       <Dropdown.Toggle  id="dropdown-basic">
       Travel Type
       </Dropdown.Toggle>
@@ -125,7 +125,7 @@ function MainBanner(props) {
         <Dropdown.Item href="/">Something else</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown></Col>
-    <Col xs={6} className="last"><Dropdown>
+    <Col lg={6} xs={12} md={6} className="last"><Dropdown>
       <Dropdown.Toggle  id="dropdown-basic">
       Duration
       </Dropdown.Toggle>

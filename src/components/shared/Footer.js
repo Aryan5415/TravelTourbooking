@@ -17,7 +17,7 @@ function Footer() {
     <div className="cstm-footer">
     <Container>
       <Row className='upper'>
-        <Col xs={4} className='first'>
+        <Col lg={4} sm={12} md={6} className='first'>
         <a>
         <img src={IndexImages.footerlogo}></img></a>
         <p>Travel helps companies<br /> manage payments easily.</p>
@@ -28,7 +28,7 @@ function Footer() {
         <a href="/"><FaInfinity /></a>
         </div>
         </Col>
-        <Col xs={2} className='cstm-nav'>
+        <Col lg={2} sm={12} md={6} className='cstm-nav'>
         <h3>Company</h3>
         <ul>
           <li>
@@ -45,7 +45,7 @@ function Footer() {
           </li>
         </ul>
         </Col>
-        <Col xs={2} className='cstm-nav'>
+        <Col lg={2} sm={12} md={6} className='cstm-nav'>
         <h3>Destinations</h3>
         <ul>
           <li>
@@ -62,7 +62,7 @@ function Footer() {
           </li>
         </ul>
         </Col>
-        <Col xs={4} className='cstm-newsletter'>
+        <Col lg={4} sm={12} md={6} className='cstm-newsletter'>
         <h3>Join Our Newsletter</h3>
         <Form>
         <Form.Control type="email" placeholder="Your email address" />

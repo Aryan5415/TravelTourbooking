@@ -33,7 +33,7 @@ function AboutUs(props) {
       <section className="aboutpromotion">
         <Container>
           <Row className="main">
-            <Col xs={6}>
+            <Col xs={12} lg={6} md={6}>
               <h3>Promotion</h3>
               <h2>We Provide You Best Europe Sightseeing Tours</h2>
               <p>
@@ -44,7 +44,7 @@ function AboutUs(props) {
               </p>
               <Link to="/">view packages</Link>
             </Col>
-            <Col xs={6}>
+            <Col xs={12} lg={6} md={6}>
               <img src={IndexImages.aboutpromotionimg}></img>
             </Col>
           </Row>
@@ -76,10 +76,10 @@ function AboutUs(props) {
       <section className="cstm-trend">
         <Container>
           <Row className="main">
-            <Col xs={6}>
+            <Col xs={12} lg={6} md={6}>
               <img src={IndexImages.Aboutusimg1}></img>
             </Col>
-            <Col xs={6}>
+            <Col xs={12} lg={6} md={6}>
               <h3>Trend</h3>
               <h2>Our Popular Tour Plans</h2>
               <p>
@@ -109,7 +109,7 @@ function AboutUs(props) {
           <h3>Explore more</h3>
           <h2>Our International Packages</h2>
           <Row className="places">
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Barcelona} />
                 <div className="name-price">
@@ -125,7 +125,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Switzerland} />
                 <div className="name-price">
@@ -141,7 +141,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.RioDeJenero} />
                 <div className="name-price">
@@ -150,7 +150,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Barcelona2} />
                 <div className="name-price">
@@ -166,7 +166,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Barcelona3} />
                 <div className="name-price">
@@ -175,7 +175,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Maldives} />
                 <div className="name-price">
@@ -184,7 +184,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Barcelona4} />
                 <div className="name-price">
@@ -193,7 +193,7 @@ function AboutUs(props) {
                 </div>
               </div>
             </Col>
-            <Col xs={3}>
+            <Col xs={6} lg={3} md={3}>
               <div className="main">
                 <img src={IndexImages.Pakistan} />
                 <div className="name-price">
