@@ -319,14 +319,14 @@ function PackagesDetails() {
       case "location":
         return (
           <Row className="tab-before">
-            <Col xs={7} className="left location">
+            <Col xs={12} md={12} lg={7} className="left location">
             <h2 className="title">Tour location</h2>
             <p>Qui tempore voluptate qui quia commodi rem praesentium alias et voluptates officia sed molestiae sint et voluptas quos. Qui harum repudiandae galisum dolorem Hic deleniti officiis est sapiente explicabo non eaque corporis aut voluptatum iusto At facere enim id voluptas reprehenderit. Ut voluptas laudantium</p>
             <img src={IndexImages.Map} />
             <p>Sit quasi soluta non temporibus voluptas non necessitatibus tempore sit deleniti praesentium aut velit nostrum ut itaque atque ad expedita veniam. Hic deleniti officiis est sapiente explicabo non eaque corporis aut voluptatum iusto At facere enim id voluptas reprehenderit. Ut voluptas laudantium et molestias voluptatem ex doloremque omnis est ipsum nihil.</p>
             <p>Quo facere eveniet 33 sint rerum est internos impedit sed dignissimos quia. Et rerum deleniti et voluptates saepe qui labore quisquam non accusantium temporibus. Quo velit numquam hic excepturi sequi sed dicta doloribus! In quos possimus quo quibusdam aliquid est culpa porro sed molestiae libero At blanditiis minima a reiciendis fugiat.</p>
             </Col>
-            <Col xs={5} className="right">
+            <Col xs={12} lg={5} md={12} className="right">
               <div className="book-tour">
                 <h2>Book This Tour</h2>
                 <p>
@@ -367,7 +367,7 @@ function PackagesDetails() {
       case "gallery":
         return (
           <Row className="tab-before">
-            <Col xs={7} className="left gallery">
+            <Col xs={12} lg={7} md={12} className="left gallery">
             <Row className="main">
               <Col xs={6} className="left-img">
               <img src={IndexImages.TabGalleryImg1} />
@@ -396,7 +396,7 @@ function PackagesDetails() {
       <Pagination.Next />
     </Pagination>
             </Col>
-            <Col xs={5} className="right">
+            <Col xs={12} lg={5} md={12} className="right">
               <div className="book-tour">
                 <h2>Book This Tour</h2>
                 <p>

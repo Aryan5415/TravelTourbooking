@@ -1783,6 +1783,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 		height: 30rem;
 		left: -1.063rem;
 	}
+	.cstm-packagedetail .tab-content .location .title, .cstm-packagedetail .tab-content .location p, .cstm-packagedetail .tab-content .location img {
+		margin-bottom: 1.5rem;
+	}
+	.cstm-packagedetail .tab-content .tab-before::before {
+		width: 8rem;
+		height: 8rem;
+		bottom: -6.5rem;
+		left: -0.75rem;
+	}
+	.cstm-packagedetail .tab-content .gallery .left-img img {
+		max-height: 7rem;
+	}
+	.modal-dialog .modal-content {
+		padding: 2.5rem 1.5rem;
+	}
+	.fade.modal {
+		padding: 0!important;
+	}
+	.modal-dialog .modal-title h2 {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+	.modal-dialog .modal-body input#floatingInput {
+		font-size: 1rem;
+	}
 }
 @media (min-width:768px) and (max-width:1199px) {
 	h1 {
@@ -2039,5 +2064,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 		height: 23rem;
 		left: -1.263rem;
 		width: 0.083rem;
+	}
+	.cstm-packagedetail .tab-content .tab-before::before {
+		width: 12rem;
+		height: 12rem;
+		bottom: -9rem;
+		left: -1.75rem;
+	}
+	.cstm-packagedetail .tab-content .gallery .left-img img {
+		max-height: 9rem;
+		object-fit: cover;
 	}
 }

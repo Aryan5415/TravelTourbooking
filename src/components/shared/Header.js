@@ -97,115 +97,115 @@ function Header() {
                     </Row>
                     <Link to="/" className="add">Activities preferences (optional)</Link>
                     <Row className="cstm-checkboxes">
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Culture</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Outdoors</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Relaxing</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Wildlife</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Romantic</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Religious</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Hiking</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Musical</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Shopping</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Business</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Museams</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Party</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Traditions</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Walks</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">FIshing</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Cruise</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Guide</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Healthcare</label>
     </div>
                     </Col>
-                    <Col xs={3} className="p-0">
+                    <Col xs={6} lg={3} md={4} className="p-0">
                     <div class="form-check">
     <input class="form-check-input" type="checkbox" />
     <label class="form-check-label">Accomodation</label>
