@@ -1134,8 +1134,11 @@ section.patners {
 .cstm-packagedetail .upper .nav-item {
 	width:25%;
 }
+.upper.nav.nav-tabs {
+    background-color: #F8F8F8;
+	border: 0;
+}
 .cstm-packagedetail .upper .nav-item a {
-	background-color:#F8F8F8;
 	padding:3rem;
 	text-align:center;
 	font-size:1.25rem;
@@ -1434,8 +1437,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media (max-width:767px) {
 	h1 {
-		font-size:5.875rem;
-		line-height:6.875rem;
+		font-size:5rem;
+		line-height:6rem;
 	}
 	h2 {
 		font-size:1.875rem;
@@ -1698,8 +1701,90 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	.explore-more .name-price h3 {
 		font-size:0.875rem;
 	}
+	.upcomingpackages, .cstm-packagedetail {
+		padding: 0 0 3.75rem 0;
+	}
+	.upcomingpackages .upper {
+		padding: 1.75rem;
+		gap: 1.5rem 0;
+	}
+	.upcomingpackages .lower .afterimg {
+		padding: 0.3rem 1rem;
+	}
+	.upcomingpackages .lower .content {
+		padding: 1.5rem 1rem;
+	}
+	.cstm-packagedetail .tab-content .gallery ul.pagination, .upcomingpackages .lower .left .pagination {
+		margin-top: 1rem;
+	}
+	.upcomingpackages .lower .right .plan-trip, .cstm-packagedetail .tab-content .right .book-tour {
+		padding: 2.5rem 1.5rem;
+	}
+	.upcomingpackages .lower .right .plan-trip h2, .cstm-packagedetail .tab-content .right .book-tour h2 {
+		font-size: 1.875rem;
+		line-height: 2.75rem;
+	}
+	.upcomingpackages .lower .right .plan-trip .form {
+		padding: 0;
+	}
+	.upcomingpackages .lower .right img, .cstm-packagedetail .tab-content .right img {
+		margin-top: 2rem;
+	}
+	.upper.nav.nav-tabs {
+		flex-direction: column;
+	}
+	.cstm-packagedetail .upper .nav-item {
+		width: 100%;
+	}
+	.cstm-packagedetail {
+		padding: 0 0 3.75rem 0;
+		margin: 0 0.938rem;
+	}
+	.cstm-packagedetail .upper .nav-item a {
+		padding: 2.5rem 1.75rem;
+	}
+	.tab-content {
+		padding: 2.75rem 1.5rem 0;
+	}
+	.cstm-packagedetail .tab-content .title {
+		flex-direction: column;
+		gap: 1rem 0;
+		align-items: start;
+	}
+	.cstm-packagedetail .tab-content .reviews {
+		justify-content: left;
+	}
+	.cstm-packagedetail .tab-content .info {
+		margin: 2rem 0 3rem;
+		gap: 0;
+	}
+	.cstm-packagedetail .tab-content .cstm-gallery p {
+		margin: -1rem 0 1rem;
+	}
+	.cstm-packagedetail .tab-content .right .book-tour{
+		margin: 1.5rem 0 0;
+	}
+	.cstm-packagedetail .tab-content .right form {
+		padding: 0;
+	}
+	.cstm-packagedetail .tab-content .right form input.form-control, .cstm-packagedetail .tab-content .right form textarea, .upcomingpackages .lower .right .plan-trip input {
+		padding: 1rem 1rem 1rem 3rem;
+	}
+	.cstm-packagedetail .tab-content .tour-info .info-content {
+		padding-top: 0;
+	}
+	.cstm-packagedetail .tab-content .tour-info .info-content li {
+		margin-bottom: 0.5rem;
+	}
+	.cstm-packagedetail .tab-content .tour-info .info-content ul {
+		margin-top: 1rem;
+	}
+	.cstm-packagedetail .tab-content .tour-info .info-content::before {
+		height: 30rem;
+		left: -1.063rem;
+	}
 }
-@media (min-width:768px) and (max-width:1119px) {
+@media (min-width:768px) and (max-width:1199px) {
 	h1 {
 		font-size:7.875rem;
 		line-height:8.75rem;
@@ -1899,5 +1984,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	}
 	.explore-more .places .main.mt {
 		margin-top: 2rem;
+	}
+	.upcomingpackages, .cstm-packagedetail {
+		padding: 0 0 5rem 0;
+		top: -5rem;
+		max-width: 46.5rem;
+	}
+	.upcomingpackages .container, .cstm-packagedetail .container{
+		padding: 0;
+	}
+	.upcomingpackages .upper {
+		padding: 2.375rem 0;
+	}
+	.upcomingpackages .upper h3 {
+		font-size: 1rem;
+		align-items: start;
+	}
+	.upcomingpackages .upper h3 span {
+		margin-right: 0.5rem;
+	}
+	.upcomingpackages .lower .afterimg {
+		padding: 0.3rem 1rem;
+	}
+	.upcomingpackages .lower .content {
+		padding: 1.5rem 1rem;
+	}
+	.cstm-packagedetail .tab-content .gallery ul.pagination, .upcomingpackages .lower .left .pagination {
+		margin-top: 1rem;
+	}
+	.upcomingpackages .lower .right img, .cstm-packagedetail .tab-content .right img {
+		margin-top: 2rem;
+	}
+	.cstm-packagedetail{
+		max-width: 45rem;
+	}
+	.cstm-packagedetail .upper .nav-item a {
+		font-size: 0.875rem;
+		padding: 2rem;
+	}
+	.cstm-packagedetail .upper .nav-item img {
+		width: 1.25rem;
+	}
+	.cstm-packagedetail .tab-content .info {
+		gap: 1rem 0;
+		margin: 2.5rem 0 3.5rem;
+	}
+	.cstm-packagedetail .tab-content .cstm-gallery p {
+		margin: -1rem 0 2rem;
+	}
+	.cstm-packagedetail .tab-content .right .book-tour{
+		margin-top: 2rem;
+	}
+	.cstm-packagedetail .tab-content .tour-info .info-content::before {
+		height: 23rem;
+		left: -1.263rem;
+		width: 0.083rem;
 	}
 }

@@ -32,7 +32,7 @@ function Packages() {
       <section className="upcomingpackages">
         <Container>
           <Row className="upper">
-            <Col>
+            <Col lg xs={12} md={3}>
               <h3>
                 <span>
                   <img src={IndexImages.Calender} />
@@ -40,7 +40,7 @@ function Packages() {
                 Date
               </h3>
             </Col>
-            <Col>
+            <Col lg xs={12} md={3}>
               <h3>
                 <span>
                   <img src={IndexImages.Upload} />
@@ -48,7 +48,7 @@ function Packages() {
                 price low to High
               </h3>
             </Col>
-            <Col>
+            <Col lg xs={12} md={3}>
               <h3>
                 <span>
                   <img src={IndexImages.Upload1} />
@@ -56,7 +56,7 @@ function Packages() {
                 Price High to low
               </h3>
             </Col>
-            <Col>
+            <Col lg xs={12} md={3}>
               <h3>
                 <span>
                   <img src={IndexImages.Pencil} />
@@ -66,9 +66,9 @@ function Packages() {
             </Col>
           </Row>
           <Row className="lower">
-            <Col xs={7} className="left">
+            <Col xs={12} className="left" lg={7} md={12}>
               <Row>
-                <Col xs={6}>
+                <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
                       <img src={IndexImages.CstmPackageimg1} className="main" />
@@ -107,7 +107,7 @@ function Packages() {
                     </div>
                   </Link>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
                       <img src={IndexImages.CstmPackageimg2} className="main" />
@@ -146,7 +146,7 @@ function Packages() {
                     </div>
                   </Link>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
                       <img src={IndexImages.CstmPackageimg3} className="main" />
@@ -185,7 +185,7 @@ function Packages() {
                     </div>
                   </Link>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
                       <img src={IndexImages.CstmPackageimg4} className="main" />
@@ -224,7 +224,7 @@ function Packages() {
                     </div>
                   </Link>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
                       <img src={IndexImages.CstmPackageimg5} className="main" />
@@ -263,7 +263,7 @@ function Packages() {
                     </div>
                   </Link>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
                       <img src={IndexImages.CstmPackageimg6} className="main" />
@@ -312,7 +312,7 @@ function Packages() {
       <Pagination.Next />
     </Pagination>
             </Col>
-            <Col xs={5} className="right">
+            <Col xs={12} className="right" lg={5} md={12}> 
             <div className="plan-trip">
             <h2>Plan Your Trip</h2>
               <p>

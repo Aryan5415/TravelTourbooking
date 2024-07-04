@@ -33,7 +33,7 @@ function PackagesDetails() {
       case "information":
         return (
           <Row>
-            <Col xs={7}>
+            <Col xs={12} lg={7}>
               <div className="title">
                 <h2>Switzerland</h2>
                 <h3>
@@ -67,48 +67,48 @@ function PackagesDetails() {
                 quasi alias ut rerum suscipit et nihil deleniti.
               </p>
               <Row className="info">
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Destination</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <p>: Zurich, Switzerland</p>
                 </Col>
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Departure</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <p>: Main Sqaure, New City</p>
                 </Col>
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Departure Time</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <p>: Approximately 08 : 10 AM</p>
                 </Col>
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Return Time</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <p>: Approximately 07 : 20 PM</p>
                 </Col>
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Dress Code</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <p>: Casual, comfortable and light</p>
                 </Col>
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Not Included</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <Row>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <p>
                         <FaRegCircleXmark />
                         Gallery Ticket{" "}
                       </p>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <p>
                         <FaRegCircleXmark />
                         Lunch{" "}
@@ -116,29 +116,29 @@ function PackagesDetails() {
                     </Col>
                   </Row>
                 </Col>
-                <Col xs={4}>
+                <Col xs={12} lg={4} md={4}>
                   <h3>Included</h3>
                 </Col>
-                <Col xs={8}>
+                <Col xs={12} lg={8} md={8}>
                   <Row>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <p>
                         <FaRegCircleCheck />5 star Accomodations{" "}
                       </p>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <p>
                         <FaRegCircleCheck />
                         Airport Transfer{" "}
                       </p>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <p>
                         <FaRegCircleCheck />
                         Breakfast{" "}
                       </p>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6} md={6}>
                       <p>
                         <FaRegCircleCheck />
                         Personal Guide{" "}
@@ -175,7 +175,7 @@ function PackagesDetails() {
                 </Col>
               </Row>
             </Col>
-            <Col xs={5} className="right">
+            <Col xs={12} lg={5} className="right">
               <div className="book-tour">
                 <h2>Book This Tour</h2>
                 <p>
@@ -216,13 +216,13 @@ function PackagesDetails() {
       case "tourPlan":
         return (
           <Row>
-            <Col xs={7} className="left">
+            <Col xs={12} lg={7} md={12} className="left">
             <h2 className="title">Tour Plan</h2>
             <Row className="tour-info">
-              <Col xs={1}>
+              <Col xs={2} lg={1} md={1}>
               <p className="number">01</p>
               </Col>
-              <Col xs={11} className="info-content">
+              <Col xs={10} lg={11} md={11} className="info-content">
               <h3>Day 1: Departure</h3>
               <p>Qui tempore voluptate qui quia commodi rem praesentium alias et voluptates officia sed molestiae sint et voluptas quos. Qui harum repudiandae galisum dolorem</p>
               <ul>
@@ -232,10 +232,10 @@ function PackagesDetails() {
                 <li>Breakfast</li>
               </ul>
               </Col>
-              <Col xs={1}>
+              <Col xs={2} lg={1} md={1}>
               <p className="number">02</p>
               </Col>
-              <Col xs={11} className="info-content">
+              <Col xs={10} lg={11} md={11} className="info-content">
               <h3>Day 2: Visiting Zurich, Geneva and Zermatt</h3>
               <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
               <ul>
@@ -245,10 +245,10 @@ function PackagesDetails() {
                 <li>Breakfast</li>
               </ul>
               </Col>
-              <Col xs={1}>
+              <Col xs={2} lg={1} md={1}>
               <p className="number">03</p>
               </Col>
-              <Col xs={11} className="info-content">
+              <Col xs={10} lg={11} md={11} className="info-content">
               <h3>Day 3: Rest</h3>
               <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
               <ul>
@@ -256,10 +256,10 @@ function PackagesDetails() {
                 <li>Breakfast</li>
               </ul>
               </Col>
-              <Col xs={1}>
+              <Col xs={2} lg={1} md={1}>
               <p className="number">04</p>
               </Col>
-              <Col xs={11} className="info-content">
+              <Col xs={10} lg={11} md={11} className="info-content">
               <h3>Day 4: Historical Tour</h3>
               <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
               <ul>
@@ -269,16 +269,16 @@ function PackagesDetails() {
                 <li>Breakfast</li>
               </ul>
               </Col>
-              <Col xs={1}>
+              <Col xs={2} lg={1} md={1}>
               <p className="number">05</p>
               </Col>
-              <Col xs={11} className="info-content">
+              <Col xs={10} lg={11} md={11} className="info-content">
               <h3>Day 5: Return</h3>
               <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
               </Col>
             </Row>
             </Col>
-            <Col xs={5} className="right">
+            <Col xs={12} lg={5} md={12} className="right">
               <div className="book-tour">
                 <h2>Book This Tour</h2>
                 <p>
