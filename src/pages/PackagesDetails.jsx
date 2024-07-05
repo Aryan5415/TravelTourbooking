@@ -37,7 +37,7 @@ function PackagesDetails() {
               <div className="title">
                 <h2>Switzerland</h2>
                 <h3>
-                  1,000 $<span className="color-chnge">/</span>
+                  1,000 $<span className="color-chnge">/ </span>
                   <span className="font-chnge">Per Couple</span>
                 </h3>
               </div>
