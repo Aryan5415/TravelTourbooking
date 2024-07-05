@@ -1316,6 +1316,7 @@ section.patners {
 }
 .cstm-packagedetail .tab-content .cstm-gallery img {
 	width:100%;
+	height: 100%;
 }
 .cstm-packagedetail .tab-content .right p {
 	margin-bottom:2rem;
