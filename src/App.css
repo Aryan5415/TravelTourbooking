@@ -8,7 +8,7 @@ h1 {
 	line-height:11rem;
 	font-weight:400;
 	color:#FFF;
-	font-family:"Yesteryear",cursive;
+	font-family:"Yesteryear";
 }
 h2 {
 	color:#181E4B;
@@ -413,7 +413,7 @@ section.homehero {
 .homehero h1::before {
 	position:absolute;
 	content:'';
-	background-image:url("../src/assets/images/heroHbefore.png");
+	background-image:url("./assets/images/heroHbefore.png");
 	background-repeat:no-repeat;
 	background-size:contain;
 	width:4.875rem;
@@ -521,7 +521,7 @@ section.homehero {
 	width:100%;
 }
 .cstm-video {
-	background-image:url(/static/media/Videobg.aaa224d5.png);
+	background-image:url("./assets/images/Videobg.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 	padding:12rem 0;
@@ -580,7 +580,7 @@ section.homehero {
 .cstm-trend:after {
 	position:absolute;
 	content:'';
-	background-image:url(/static/media/image919.c13f4d78.png);
+	background-image:url("./assets/images/image919.png");
 	background-repeat:no-repeat;
 	background-size:contain;
 	width:21.25rem;
@@ -629,7 +629,7 @@ section.homehero {
 	margin-top:3.65rem;
 }
 .cstm-testimonial {
-	background-image:url("../src/assets/images/testimonialbg.png");
+	background-image:url("./assets/images/testimonialbg.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
@@ -658,18 +658,19 @@ section.homehero {
 	overflow:visible;
 }
 .cstm-testimonial .carousel .carousel-control-prev-icon {
-	background-image:url("../src/assets/images/navigationleft.png");
+	background-image:url("./assets/images/navigationleft.png");
 	height:4rem;
 	width:4rem;
 }
 .cstm-testimonial .carousel .carousel-control-next-icon {
-	background-image:url("../src/assets/images/navigationright.png");
+	background-image:url("./assets/images/navigationright.png");
 	height:4rem;
 	width:4rem;
 }
 .cstm-testimonial .carousel .carousel-control-prev {
 	left:-42%;
 	right:0;
+	height: 4rem;
 	opacity:1;
 	margin:auto;
 }
@@ -677,6 +678,7 @@ section.homehero {
 	left:0;
 	right:-42%;
 	opacity:1;
+	height: 4rem;
 	margin:auto;
 }
 .cstm-testimonial .content {
@@ -704,7 +706,7 @@ section.homehero {
 .cstm-testimonial .content p::after {
 	position:absolute;
 	content:'';
-	background-image:url("../src/assets/images/lastquote.png");
+	background-image:url("./assets/images/lastquote.png");
 	background-repeat:no-repeat;
 	background-size:contain;
 	right:0;
@@ -717,7 +719,7 @@ section.homehero {
 .cstm-testimonial .content p::before {
 	position:absolute;
 	content:'';
-	background-image:url("../src/assets/images/startquote.png");
+	background-image:url("./assets/images/startquote.png");
 	background-repeat:no-repeat;
 	background-size:contain;
 	width:5rem;
@@ -927,7 +929,7 @@ section.patners {
 	overflow:hidden;
 }
 .home-explore .nature,.home-explore .cities {
-	background-image:url(./assets/images/natureimg.png);
+	background-image:url("./assets/images/natureimg.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
@@ -988,7 +990,7 @@ section.patners {
 .cstm-package .package::before {
 	position:absolute;
 	content:'';
-	background-image:url("../src/assets/images/swiz.png");
+	background-image:url("./assets/images/swiz.png");
 	background-repeat:no-repeat;
 	background-size:contain;
 	height:6.25rem;
@@ -997,10 +999,10 @@ section.patners {
 	left:1.25rem;
 }
 .cstm-package .package.two::before {
-	background-image:url("../src/assets/images/amazon.png");
+	background-image:url("./assets/images/amazon.png");
 }
 .cstm-package .package.three::before {
-	background-image:url("../src/assets/images/giza.png");
+	background-image:url("./assets/images/giza.png");
 }
 .cstm-package .package img {
 	margin-bottom:3.125rem;
@@ -1510,6 +1512,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	padding:4px 12.2px;
 	border:0;
 	font-family:"Poppins",sans-serif;
+	position: relative;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination a.page-link span,.upcomingpackages .lower .left .pagination a.page-link span{
+	visibility: hidden;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination .page-item:last-child a.page-link::after,.upcomingpackages .lower .left .pagination .page-item:last-child a.page-link::after {
+	position: absolute;
+	content: '';
+	background-image: url("./assets/images/paginationright.svg");
+	width: 1rem;
+	height: 1rem;
+	background-repeat: no-repeat;
+	left: 0.35rem;
+    top: 0.438rem;
+}
+.cstm-packagedetail .tab-content .gallery ul.pagination .page-item:first-child a.page-link::after,.upcomingpackages .lower .left .pagination .page-item:first-child a.page-link::after {
+	position: absolute;
+	content: '';
+	background-image: url("./assets/images/paginationleft.svg");
+	width: 1rem;
+	height: 1rem;
+	background-repeat: no-repeat;
+	right: 0.35rem;
+    top: 0.438rem;
 }
 .cstm-packagedetail .tab-content .gallery ul.pagination a.page-link:hover {
 	background-color:transparent;
