@@ -39,6 +39,10 @@ button {
 	box-shadow:0 1.25rem 2.188rem 0 rgba(223,105,81,0.15);
 	border:0.063rem solid #DF6951;
 }
+button:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
+}
 a {
 	color:#FFF;
 	font-family:CircularStd;
@@ -64,7 +68,11 @@ nav.cstm-header {
 nav.cstm-header div#navbarScroll a {
 	padding:0 1.25rem;
 	color:#FFF;
+	transition: .4s;
 	position:relative;
+}
+nav.cstm-header div#navbarScroll a:hover{
+	color: #DF6951;
 }
 nav.cstm-header div#navbarScroll a:before {
 	position:absolute;
@@ -107,6 +115,11 @@ nav.cstm-header .dropdown-toggle::after {
 	border:0.063rem solid #DF6951;
 	padding:1rem 2rem;
 	color:#FFF;
+	transition: .4s;
+}
+.cstm-header button:hover {
+	background-color: #181e4b;
+	border-color: #181e4b;
 }
 .cstm-header .dropdown-menu.show {
 	background-color:rgb(217 217 217 / 58%);
@@ -200,11 +213,14 @@ nav.cstm-header .dropdown-toggle::after {
 	bottom:0;
 	margin:auto;
 }
-.modal-dialog .modal-body .add {
+.modal-dialog .modal-body .add,.modal-dialog .modal-body .activity {
 	color:#DF6951;
 	font-size:0.813rem;
 	font-weight:600;
 	font-family:"Poppins",sans-serif;
+}
+.modal-dialog .modal-body .add:hover{
+	color: #181E4B;
 }
 .modal-dialog .modal-body .two-floating {
 	max-width:26.15rem;
@@ -247,8 +263,13 @@ nav.cstm-header .dropdown-toggle::after {
 	padding:0.875rem 2.125rem;
 	font-family:"Poppins",sans-serif;
 	color:#FFF;
+	transition: .4s;
 	margin:auto;
 	display:block;
+}
+.modal-dialog .modal-body button:hover{
+	background-color: #181e4b;
+	border-color: #181E4B;
 }
 .form-check-input:focus {
 	box-shadow:none;
@@ -278,7 +299,11 @@ nav.cstm-header .dropdown-toggle::after {
 .cstm-footer .social-icons svg {
 	color:#DF6951;
 	margin-right:0.938rem;
+	transition: .4s;
 	font-size:1.25rem;
+}
+.cstm-footer .social-icons svg:hover{
+	color: #181E4B;
 }
 .cstm-footer .social-icons a:last-child svg {
 	margin-right:0;
@@ -299,6 +324,11 @@ nav.cstm-header .dropdown-toggle::after {
 .cstm-footer .cstm-nav a {
 	color:#181433;
 	font-family:"Manrope",sans-serif;
+	transition: .4s;
+}
+.cstm-footer .cstm-nav a:hover{
+	color: #DF6951;
+	font-weight: 600;
 }
 .cstm-footer .cstm-nav li {
 	margin-bottom:1.125rem;
@@ -348,6 +378,11 @@ nav.cstm-header .dropdown-toggle::after {
 	padding:0.875rem 2.125rem;
 	position:relative;
 	right:1rem;
+	transition: .4s;
+}
+.cstm-footer button:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
 }
 .hero,.cstm-slides {
 	padding:15.625rem 0 11.25rem;
@@ -452,6 +487,10 @@ section.homehero {
 	border:0.063rem solid #DF6951;
 	padding:0.875rem 3.438rem;
 }
+.homehero .filter button:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
+} 
 .aboutpromotion {
 	padding:6.25rem 0;
 }
@@ -468,6 +507,11 @@ section.homehero {
 	text-transform:capitalize;
 	font-family:"Poppins",sans-serif;
 	font-weight:600;
+	transition: .4s;
+}
+.aboutpromotion a:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
 }
 .aboutpromotion p {
 	margin-bottom:3.125rem;
@@ -788,6 +832,10 @@ section.patners {
 	font-weight:600;
 	transition:.4s;
 }
+.cstm-category .cstm-services a:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
+}
 .cstm-category .cstm-services .cstm-iconbox {
 	max-width:26rem;
 	align-items:center;
@@ -855,6 +903,11 @@ section.patners {
 	text-transform:capitalize;
 	font-family:"Poppins",sans-serif;
 	font-weight:600;
+	transition: .4s;
+}
+.we-provide a:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
 }
 .we-provide p {
 	margin:1rem 0 3.125rem;
@@ -911,6 +964,11 @@ section.patners {
 	text-transform:capitalize;
 	font-family:"Poppins",sans-serif;
 	font-weight:600;
+	transition: .4s;
+}
+.home-explore a:hover{
+	background-color: #DF6951;
+	border-color: #DF6951;
 }
 .cstm-package {
 	padding:6.25rem 0;
@@ -992,6 +1050,11 @@ section.patners {
 	font-weight:600;
 	font-size:0.813rem;
 	color:#FFF;
+	transition: .4s;
+}
+.cstm-package .package a:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
 }
 .upcomingpackages,.cstm-packagedetail {
 	padding:0 0 6.25rem 0;
@@ -1061,6 +1124,29 @@ section.patners {
 }
 .upcomingpackages .lower p {
 	color:#181E4B;
+}
+.upcomingpackages .filter-range {
+    background: #FFF;
+    padding: 1.25rem 0;
+    margin: 1rem 0 0.5rem;
+}
+.upcomingpackages .lower .right .plan-trip .form .filter-range::before {
+    background-color: #DF6951;
+    padding: 1.25rem;
+    left: 0;
+}
+.upcomingpackages .lower .right .plan-trip .form .filter-range::after {
+    position: absolute;
+    content: '';
+    background-color: #DF6951;
+    padding: 1.25rem;
+    right: 0;
+    top: 0;
+}
+.upcomingpackages .lower .right .plan-trip .form p.price-range {
+    text-align: left;
+    font-size: 1.125rem;
+    color: rgba(0,0,0,.56);
 }
 .upcomingpackages .lower .content {
 	padding:1.875rem;
@@ -1262,7 +1348,12 @@ section.patners {
 	padding:0.95rem;
 	border-radius:0.625rem;
 	display:block;
+	transition: .4s;
 	margin:1.5rem auto 0;
+}
+.cstm-packagedetail .tab-content .right form button:hover,.upcomingpackages .lower .right .plan-trip .form button:hover{
+	background-color: #181E4B;
+	border-color: #181E4B;
 }
 .cstm-packagedetail .tab-content .right form button.submit {
 	padding:0.95rem 3.072rem!important;
@@ -1381,6 +1472,7 @@ section.patners {
 .cstm-packagedetail .tab-content .gallery .left-img img {
 	max-height:13rem;
 	margin-bottom:1rem;
+	object-fit: cover;
 }
 .cstm-packagedetail .tab-content .gallery .main {
 	gap:1rem 0;
@@ -1959,12 +2051,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 		width:100%;
 	}
 	.cstm-package .package::before {
-		top:30%;
+		top:32%;
 	}
 	.cstm-package .package .star-rating {
-		margin-top:2rem;
+		margin-top:1rem;
 		text-align:right;
 		padding-right:1.5rem;
+	}
+	.cstm-package .package p.description{
+		margin-bottom: 2.5rem;
 	}
 	.cstm-testimonial {
 		padding:6.25rem 0 5rem;

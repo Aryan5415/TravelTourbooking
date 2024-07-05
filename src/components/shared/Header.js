@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import IndexImages from "../../assets/images/images";
 import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
-import { Col, Row } from "react-bootstrap";
+import { Col, FloatingLabel, Form, Row } from "react-bootstrap";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -19,7 +19,7 @@ function Header() {
       <Navbar expand="lg" className="cstm-header">
         <Container>
           <Link to="/">
-            <img src={IndexImages.logo} />
+            <img src={IndexImages.logo} alt="logo" />
           </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -31,14 +31,16 @@ function Header() {
               <Link to="/">Home </Link>
               <Link to="/about">About</Link>
               <NavDropdown title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">
+                <NavDropdown.Item href="#">
                   Honeymoon Packages
                 </NavDropdown.Item>
-                <Link to="/packagesDetails">Tours Packages</Link>
-                <NavDropdown.Item href="#action5">
+                <NavDropdown.Item href="/">
+                  <Link to="/packagesDetails">Tours Packages</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#">
                   Musical Events
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action6" onClick={handleShow}>
+                <NavDropdown.Item href="#" onClick={handleShow}>
                   Build Package
                 </NavDropdown.Item>
                 <Modal show={show} onHide={handleClose}>
@@ -48,172 +50,119 @@ function Header() {
                     </Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
-                    <div className="form-floating">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="floatingInput"
-                        placeholder="Enter destination (country, region or city)"
-                      />
-                      <label htmlFor="floatingInput">
-                        Enter destination (country, region or city)
-                      </label>
-                    </div>
-                    <div className="form-floating">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="floatingInput"
-                        placeholder="Enter destination (country, region or city)"
-                      />
-                      <label htmlFor="floatingInput">
-                        Enter destination (country, region or city)
-                      </label>
-                    </div>
-                    <Link to="/" className="add">+ Add destination</Link>
-                    <Row className="two-floating">
-                    <Col xs={8} className="form-floating one">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="floatingInput"
-                        placeholder="Date Range"
-                      />
-                      <label htmlFor="floatingInput">
-                        Date Range
-                      </label>
-                    </Col>
-                    <Col xs={4} className="form-floating two">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="floatingInput"
-                        placeholder="Guests"
-                      />
-                      <label htmlFor="floatingInput">
-                      Guests
-                      </label>
-                    </Col>
-                    </Row>
-                    <Link to="/" className="add">Activities preferences (optional)</Link>
-                    <Row className="cstm-checkboxes">
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Culture</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Outdoors</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Relaxing</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Wildlife</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Romantic</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Religious</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Hiking</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Musical</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Shopping</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Business</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Museams</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Party</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Traditions</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Walks</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">FIshing</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Cruise</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Guide</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Healthcare</label>
-    </div>
-                    </Col>
-                    <Col xs={6} lg={3} md={4} className="p-0">
-                    <div class="form-check">
-    <input class="form-check-input" type="checkbox" />
-    <label class="form-check-label">Accomodation</label>
-    </div>
-                    </Col>
+                    <Form>
+                      <FloatingLabel
+                        controlId="floatingInput"
+                        label="Enter destination (country, region or city)"
+                      >
+                        <Form.Control
+                          type="text"
+                          placeholder="Enter destination (country, region or city)"
+                        />
+                      </FloatingLabel>
 
-                    </Row>
-                    <Button>Build Package</Button>
+                      <FloatingLabel
+                        controlId="floatingInput"
+                        label="Enter destination (country, region or city)"
+                      >
+                        <Form.Control
+                          type="text"
+                          placeholder="Enter destination (country, region or city)"
+                        />
+                      </FloatingLabel>
+
+                      <Link to="/" className="add">
+                        + Add destination
+                      </Link>
+
+                      <Row className="two-floating">
+                        <Col xs={8} lg={8} md={8} className="form-floating one">
+                          <FloatingLabel
+                            controlId="floatingInput"
+                            label="Date Range"
+                          >
+                            <Form.Control
+                              type="text"
+                              placeholder="Date Range"
+                            />
+                          </FloatingLabel>
+                        </Col>
+                        <Col xs={4} lg={4} md={4} className="form-floating two">
+                          <FloatingLabel
+                            controlId="floatingInput"
+                            label="Guests"
+                          >
+                            <Form.Control type="text" placeholder="Guests" />
+                          </FloatingLabel>
+                        </Col>
+                      </Row>
+
+                      <p className="activity">
+                        Activities preferences (optional)
+                      </p>
+
+                      <Row className="cstm-checkboxes">
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Culture" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Outdoors" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Relaxing" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Wildlife" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Romantic" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Religious" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Hiking" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Musical" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Shopping" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Business" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Museams" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Party" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Traditions" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Walks" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="FIshing" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Cruise" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Guide" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Healthcare" />
+                        </Col>
+                        <Col xs={6} lg={3} md={4} className="p-0">
+                          <Form.Check label="Accomodation" />
+                        </Col>
+                      </Row>
+
+                      <Button type="submit">Build Package</Button>
+                    </Form>
                   </Modal.Body>
                 </Modal>
               </NavDropdown>

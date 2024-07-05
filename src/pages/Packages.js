@@ -5,7 +5,7 @@ import MainBanner from "../components/shared/MainBanner";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import Form from "react-bootstrap/Form";
-import Pagination from 'react-bootstrap/Pagination';
+import Pagination from "react-bootstrap/Pagination";
 
 function Packages() {
   const [pageData, setPageData] = useState({
@@ -35,7 +35,7 @@ function Packages() {
             <Col lg xs={12} md={3}>
               <h3>
                 <span>
-                  <img src={IndexImages.Calender} />
+                  <img src={IndexImages.Calender} alt="Calender" />
                 </span>
                 Date
               </h3>
@@ -43,7 +43,7 @@ function Packages() {
             <Col lg xs={12} md={3}>
               <h3>
                 <span>
-                  <img src={IndexImages.Upload} />
+                  <img src={IndexImages.Upload} alt="Upload" />
                 </span>
                 price low to High
               </h3>
@@ -51,7 +51,7 @@ function Packages() {
             <Col lg xs={12} md={3}>
               <h3>
                 <span>
-                  <img src={IndexImages.Upload1} />
+                  <img src={IndexImages.Upload1} alt="Upload1" />
                 </span>
                 Price High to low
               </h3>
@@ -59,7 +59,7 @@ function Packages() {
             <Col lg xs={12} md={3}>
               <h3>
                 <span>
-                  <img src={IndexImages.Pencil} />
+                  <img src={IndexImages.Pencil} alt="Pencil" />
                 </span>
                 Name (A-z)
               </h3>
@@ -71,12 +71,12 @@ function Packages() {
                 <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
-                      <img src={IndexImages.CstmPackageimg1} className="main" />
+                      <img src={IndexImages.CstmPackageimg1} alt="CstmPackageimg1" className="main" />
                       <div className="afterimg">
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.CalenderWhite} />
+                              <img src={IndexImages.CalenderWhite} alt="CalenderWhite" />
                             </span>
                             12, September 2022
                           </h3>
@@ -84,7 +84,7 @@ function Packages() {
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.User3} />
+                              <img src={IndexImages.User3} alt="User3" />
                             </span>
                             120+ People
                           </h3>
@@ -110,12 +110,12 @@ function Packages() {
                 <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
-                      <img src={IndexImages.CstmPackageimg2} className="main" />
+                      <img src={IndexImages.CstmPackageimg2} alt="CstmPackageimg2" className="main" />
                       <div className="afterimg">
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.CalenderWhite} />
+                              <img src={IndexImages.CalenderWhite} alt="CalenderWhite" />
                             </span>
                             12, September 2022
                           </h3>
@@ -123,7 +123,7 @@ function Packages() {
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.User3} />
+                              <img src={IndexImages.User3} alt="User3" />
                             </span>
                             120+ People
                           </h3>
@@ -149,12 +149,12 @@ function Packages() {
                 <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
-                      <img src={IndexImages.CstmPackageimg3} className="main" />
+                      <img src={IndexImages.CstmPackageimg3} alt="CstmPackageimg3" className="main" />
                       <div className="afterimg">
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.CalenderWhite} />
+                              <img src={IndexImages.CalenderWhite} alt="CalenderWhite" />
                             </span>
                             12, September 2022
                           </h3>
@@ -162,7 +162,7 @@ function Packages() {
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.User3} />
+                              <img src={IndexImages.User3} alt="User3" />
                             </span>
                             120+ People
                           </h3>
@@ -188,12 +188,12 @@ function Packages() {
                 <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
-                      <img src={IndexImages.CstmPackageimg4} className="main" />
+                      <img src={IndexImages.CstmPackageimg4} alt="CstmPackageimg4" className="main" />
                       <div className="afterimg">
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.CalenderWhite} />
+                              <img src={IndexImages.CalenderWhite} alt="CalenderWhite" />
                             </span>
                             12, September 2022
                           </h3>
@@ -201,7 +201,7 @@ function Packages() {
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.User3} />
+                              <img src={IndexImages.User3} alt="User3" />
                             </span>
                             120+ People
                           </h3>
@@ -227,12 +227,12 @@ function Packages() {
                 <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
-                      <img src={IndexImages.CstmPackageimg5} className="main" />
+                      <img src={IndexImages.CstmPackageimg5} alt="CstmPackageimg5" className="main" />
                       <div className="afterimg">
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.CalenderWhite} />
+                              <img src={IndexImages.CalenderWhite} alt="CalenderWhite" />
                             </span>
                             12, September 2022
                           </h3>
@@ -240,7 +240,7 @@ function Packages() {
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.User3} />
+                              <img src={IndexImages.User3} alt="User3" />
                             </span>
                             120+ People
                           </h3>
@@ -266,12 +266,12 @@ function Packages() {
                 <Col xs={12} lg={6} md={6}>
                   <Link to="/">
                     <div className="onhover">
-                      <img src={IndexImages.CstmPackageimg6} className="main" />
+                      <img src={IndexImages.CstmPackageimg6} alt="CstmPackageimg6" className="main" />
                       <div className="afterimg">
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.CalenderWhite} />
+                              <img src={IndexImages.CalenderWhite} alt="CalenderWhite" />
                             </span>
                             12, September 2022
                           </h3>
@@ -279,7 +279,7 @@ function Packages() {
                         <div className="inner">
                           <h3>
                             <span>
-                              <img src={IndexImages.User3} />
+                              <img src={IndexImages.User3} alt="User3" />
                             </span>
                             120+ People
                           </h3>
@@ -304,35 +304,39 @@ function Packages() {
                 </Col>
               </Row>
               <Pagination>
-      <Pagination.Prev />
-      <Pagination.Item>{1}</Pagination.Item>
-      <Pagination.Item>{2}</Pagination.Item>
-      <Pagination.Item>{3}</Pagination.Item>
-      <Pagination.Item>{4}</Pagination.Item>
-      <Pagination.Next />
-    </Pagination>
+                <Pagination.Prev />
+                <Pagination.Item>{1}</Pagination.Item>
+                <Pagination.Item>{2}</Pagination.Item>
+                <Pagination.Item>{3}</Pagination.Item>
+                <Pagination.Item>{4}</Pagination.Item>
+                <Pagination.Next />
+              </Pagination>
             </Col>
-            <Col xs={12} className="right" lg={5} md={12}> 
-            <div className="plan-trip">
-            <h2>Plan Your Trip</h2>
-              <p>
-                Ex optio sequi et quos praesentium in nostrum labore nam rerum
-                iusto aut magni nesciunt? Quo quidem neque iste expedita est
-                dolo.
-              </p>
-              <div className="form">
-                <div className="search">
-              <Form.Control type="text" placeholder=" Search Tour" />
+            <Col xs={12} className="right" lg={5} md={12}>
+              <div className="plan-trip">
+                <h2>Plan Your Trip</h2>
+                <p>
+                  Ex optio sequi et quos praesentium in nostrum labore nam rerum
+                  iusto aut magni nesciunt? Quo quidem neque iste expedita est
+                  dolo.
+                </p>
+                <Form className="form">
+                  <div className="search">
+                    <Form.Control type="text" placeholder=" Search Tour" />
+                  </div>
+                  <div className="whereto">
+                    <Form.Control type="text" placeholder="Where To?" />
+                  </div>
+                  <div className="date">
+                    <Form.Control type="text" placeholder="Date" />
+                  </div>
+                  <h3>Filter by price</h3>
+                  <div className="filter-range"></div>
+                  <p className="price-range">Price: $12 - $3600</p>
+                  <Button type="submit">Book Now</Button>
+                </Form>
               </div>
-              <div className="whereto"><Form.Control type="text" placeholder="Where To?" /></div>
-              <div className="date"><Form.Control type="text" placeholder="Date" /></div>
-              <h3>Filter by price</h3>
-              <Button type="submit">Book Now</Button>
-              </div>
-
-            </div>
-            <img src={IndexImages.PackageAirplane} />
-              
+              <img src={IndexImages.PackageAirplane} alt="PackageAirplane" />
             </Col>
           </Row>
         </Container>

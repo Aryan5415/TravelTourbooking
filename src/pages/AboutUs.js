@@ -45,7 +45,7 @@ function AboutUs(props) {
               <Link to="/">view packages</Link>
             </Col>
             <Col xs={12} lg={6} md={6}>
-              <img src={IndexImages.aboutpromotionimg}></img>
+              <img src={IndexImages.aboutpromotionimg} alt="aboutpromotionimg" />
             </Col>
           </Row>
         </Container>
@@ -77,7 +77,7 @@ function AboutUs(props) {
         <Container>
           <Row className="main">
             <Col xs={12} lg={6} md={6}>
-              <img src={IndexImages.Aboutusimg1}></img>
+              <img src={IndexImages.Aboutusimg1} alt="Aboutusimg1" />
             </Col>
             <Col xs={12} lg={6} md={6}>
               <h3>Trend</h3>
@@ -89,14 +89,14 @@ function AboutUs(props) {
                 laudantium.
               </p>
               <Row>
-                <Col>
-                  <img src={IndexImages.Vacation} />
+                <Col xs={4} md={4} lg={4}>
+                  <img src={IndexImages.Vacation} alt="Vacation" />
                 </Col>
-                <Col>
-                  <img src={IndexImages.Honeymoon} />
+                <Col xs={4} md={4} lg={4}>
+                  <img src={IndexImages.Honeymoon} alt="Honeymoon" />
                 </Col>
-                <Col>
-                  <img src={IndexImages.MusicalEvent} />
+                <Col xs={4} md={4} lg={4}>
+                  <img src={IndexImages.MusicalEvent} alt="MusicalEvent" />
                 </Col>
               </Row>
             </Col>
@@ -111,14 +111,14 @@ function AboutUs(props) {
           <Row className="places">
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Barcelona} />
+                <img src={IndexImages.Barcelona} alt="Barcelona" />
                 <div className="name-price">
                   <h3>Barcelona</h3>
                   <h3>$840</h3>
                 </div>
               </div>
               <div className="main mt">
-                <img src={IndexImages.TommorowLand} />
+                <img src={IndexImages.TommorowLand} alt="TommorowLand" />
                 <div className="name-price">
                   <h3>Tommorow land</h3>
                   <h3>$840</h3>
@@ -127,14 +127,14 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Switzerland} />
+                <img src={IndexImages.Switzerland} alt="Switzerland" />
                 <div className="name-price">
                   <h3>Switzerland</h3>
                   <h3>$840</h3>
                 </div>
               </div>
               <div className="main mt">
-                <img src={IndexImages.LosAngelas} />
+                <img src={IndexImages.LosAngelas} alt="LosAngelas" />
                 <div className="name-price">
                   <h3>Los Angelas</h3>
                   <h3>$840</h3>
@@ -143,7 +143,7 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.RioDeJenero} />
+                <img src={IndexImages.RioDeJenero} alt="RioDeJenero" />
                 <div className="name-price">
                   <h3>Rio de Jenero</h3>
                   <h3>$840</h3>
@@ -152,14 +152,14 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Barcelona2} />
+                <img src={IndexImages.Barcelona2} alt="Barcelona2" />
                 <div className="name-price">
                   <h3>Barcelona</h3>
                   <h3>$840</h3>
                 </div>
               </div>
               <div className="main mt">
-                <img src={IndexImages.India} />
+                <img src={IndexImages.India} alt="India" />
                 <div className="name-price">
                   <h3>India</h3>
                   <h3>$840</h3>
@@ -168,7 +168,7 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Barcelona3} />
+                <img src={IndexImages.Barcelona3} alt="Barcelona3" />
                 <div className="name-price">
                   <h3>Barcelona</h3>
                   <h3>$840</h3>
@@ -177,7 +177,7 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Maldives} />
+                <img src={IndexImages.Maldives} alt="Maldives" />
                 <div className="name-price">
                   <h3>Maldives</h3>
                   <h3>$840</h3>
@@ -186,7 +186,7 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Barcelona4} />
+                <img src={IndexImages.Barcelona4} alt="Barcelona4" />
                 <div className="name-price">
                   <h3>Barcelona</h3>
                   <h3>$840</h3>
@@ -195,7 +195,7 @@ function AboutUs(props) {
             </Col>
             <Col xs={6} lg={3} md={3}>
               <div className="main">
-                <img src={IndexImages.Pakistan} />
+                <img src={IndexImages.Pakistan} alt="Pakistan" />
                 <div className="name-price">
                   <h3>Pakistan</h3>
                   <h3>$840</h3>
