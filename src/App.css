@@ -167,6 +167,9 @@ nav.cstm-header .dropdown-toggle::after {
 	top:1.25rem;
 	margin:0!important;
 }
+.modal-dialog .modal-header button.btn-close:hover{
+	background-color: transparent;
+}
 .modal-dialog .modal-header button.btn-close:focus{
   box-shadow: none;
 }
